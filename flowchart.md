@@ -43,53 +43,53 @@ flowchart LR;
 ```mermaid
 flowchart LR
 
-    invisible ~~~ 0[invisible_link]
-    Normal --- 1[Normal link with text]
-    Dotted -.- 2[Dotted link with text]
-    Thick === 3[Thick link with test]
+    invisible ~~~ 0[invisible_link];
+    Normal --- 1[Normal link with text];
+    Dotted -.- 2[Dotted link with text];
+    Thick === 3[Thick link with test];
 
-    1 -- Text here ---End
-    2 -. Text here .-End
-    3 == Text here ===End
-
+    1 -- Text here ---End;
+    2 -. Text here .-End;
+    3 == Text here ===End;
 ```
+**Definition**
 
 ```
 flowchart LR
 
-    invisible ~~~ 0[invisible_link]
-    Normal --- 1[Normal link with text]
-    Dotted -.- 2[Dotted link with text]
-    Thick === 3[Thick link with test]
+    invisible ~~~ 0[invisible_link];
+    Normal --- 1[Normal link with text];
+    Dotted -.- 2[Dotted link with text];
+    Thick === 3[Thick link with test];
 
-    1 -- Text here ---End
-    2 -. Text here .-End
-    3 == Text here ===End
-
+    1 -- Text here ---End;
+    2 -. Text here .-End;
+    3 == Text here ===End;
 ```
 
 ### Arrowhead style
 
 ```mermaid
 flowchart LR
-    Arrow --> 1[Arrow Bidirectional] <--> 2[Arrow with text]
-    Circle --o 3[Circle Bidirectional] o--o 4[Circle with text]
-    Cross --x 5[Cross Bidirectional] x--x 6[Cross with text]
+    Arrow --> 1[Arrow Bidirectional] <--> 2[Arrow with text];
+    Circle --o 3[Circle Bidirectional] o--o 4[Circle with text];
+    Cross --x 5[Cross Bidirectional] x--x 6[Cross with text];
 
-    2 -- text here --->End
-    4 -- text here ---oEnd
-    6 -- text here ---xEnd
+    2 -- text here --->End;
+    4 -- text here ---oEnd;
+    6 -- text here ---xEnd;
 ```
+**Definition**
 
 ```
 flowchart LR
-    Arrow --> 1[Arrow Bidirectional] <--> 2[Arrow with text]
-    Circle --o 3[Circle Bidirectional] o--o 4[Circle with text]
-    Cross --x 5[Cross Bidirectional] x--x 6[Cross with text]
+    Arrow --> 1[Arrow Bidirectional] <--> 2[Arrow with text];
+    Circle --o 3[Circle Bidirectional] o--o 4[Circle with text];
+    Cross --x 5[Cross Bidirectional] x--x 6[Cross with text];
 
-    2 -- text here --->End
-    4 -- text here ---oEnd
-    6 -- text here ---xEnd
+    2 -- text here --->End;
+    4 -- text here ---oEnd;
+    6 -- text here ---xEnd;
 ```
 
 ### Chaining of links
@@ -100,12 +100,13 @@ Declare multiple links in the same line
 
 ```mermaid
 flowchart LR
-    1[simple chain] --> 2[simple chain with text] -- text here --> End
+    1[simple chain] --> 2[simple chain with text] -- text here --> End;
 ```
+**Definition**
 
 ```
 flowchart LR
-    1[simple chain] --> 2[simple chain with text] -- text here --> End
+    1[simple chain] --> 2[simple chain with text] -- text here --> End;
 ```
 
 **2. Split and combine chaining**
@@ -114,56 +115,50 @@ Declare mulitple nodes links in the same line
 
 ```mermaid
 flowchart LR
-    a --> b & c -->d
+    a --> b & c --> d;
 ```
+**Definition**
 
 ```
 flowchart LR
-    a --> b & c -->d
+    a --> b & c --> d;
 ```
 
 **3. Multisplit chaining**
 
-used to describe dependencies
+Used to describe dependencies
 
 ```mermaid
 flowchart TD
-    A --> C & D 
-    B --> C & D
+    A --> C & D; 
+    B --> C & D;
 ```
+**Definition**
 
 ```
 flowchart TD
-    A --> C & D 
-    B --> C & D
+    A --> C & D; 
+    B --> C & D;
 ```
 
 ### Length of the links
 
 ```mermaid
 flowchart LR
-
-    Default --> Default2 --> Default3 --> Default4 -->Default5
-
-    Long ---> Long2 --->Long3
-
-    Superlong -----> Superlong2
-
+    Default --> Default2 --> Default3 --> Default4 -->Default5;
+    Long ---> Long2 --->Long3;
+    Superlong -----> Superlong2;
 ```
+**Definition**
 
 ```
 flowchart LR
-
-    Default --> Default2 --> Default3 --> Default4 -->Default5
-
-    Long ---> Long2 --->Long3
-
-    Superlong -----> Superlong2
-
+    Default --> Default2 --> Default3 --> Default4 -->Default5;
+    Long ---> Long2 --->Long3;
+    Superlong -----> Superlong2;
 ```
 
 **Table for link length**
-
 
 | Length            | 1   | 2    | 3     |
 |-------------------|-----|------|-------|
@@ -195,7 +190,7 @@ flowchart LR
 
 ```mermaid
 graph TD
-    start --> Middle --> End
+    start --> Middle --> End;
 ```
 </td><td>
 
@@ -203,7 +198,7 @@ graph TD
 
 ```mermaid
 graph BT
-    Start --> Middle --> End
+    Start --> Middle --> End;
 ```
 </td></tr>
 
@@ -214,7 +209,7 @@ graph BT
 
 ```mermaid
 graph LR
-    Start --> Middle --> End
+    Start --> Middle --> End;
 ```
 </td><td>
 
@@ -222,7 +217,7 @@ graph LR
 
 ```mermaid
 graph RL
-    Start --> Middle --> End
+    Start --> Middle --> End;
 ```
 </td></tr>
 </table>
@@ -235,32 +230,29 @@ graph RL
 graph TD
 
     subgraph a
-        a1 --> a2
-    end
-
+        a1 --> a2;
+    end;
     subgraph b
-        b1 --> b2
-    end
-
+        b1 --> b2;
+    end;
     subgraph c
-        c1 --> c2
-    end
+        c1 --> c2;
+    end;
 ```
+**Definition**
 
 ```
 graph TD
 
     subgraph a
-        a1 --> a2
-    end
-
+        a1 --> a2;
+    end;
     subgraph b
-        b1 --> b2
-    end
-
+        b1 --> b2;
+    end;
     subgraph c
-        c1 --> c2
-    end
+        c1 --> c2;
+    end;
 ```
 
 ### Linking graphs and nodes
@@ -268,47 +260,48 @@ graph TD
 ```mermaid
 flowchart LR
     subgraph One
-    a1
-    a2
+    a1;
+    a2;
     end
 
     subgraph Two
-    b1
-    b2
+    b1;
+    b2;
     end
 
     subgraph Three
-    c1
-    c2
+    c1;
+    c2;
     end
 
-    a1 -- "Node to Node" ---> a2
-    b1 -- "Node to Graph" --> Three
-    One -- "Graph to Node" ---> c2
-    One -- "Graph to Graph" ---> Two
+    a1 -- "Node to Node" ---> a2;
+    b1 -- "Node to Graph" --> Three;
+    One -- "Graph to Node" ---> c2;
+    One -- "Graph to Graph" ---> Two;
 ```
+**Definition**
 
 ```
 flowchart LR
     subgraph One
-    a1
-    a2
+    a1;
+    a2;
     end
 
     subgraph Two
-    b1
-    b2
+    b1;
+    b2;
     end
 
     subgraph Three
-    c1
-    c2
+    c1;
+    c2;
     end
 
-    a1 -- "Node to Node" ---> a2
-    b1 -- "Node to Graph" --> Three
-    One -- "Graph to Node" ---> c2
-    One -- "Graph to Graph" ---> Two
+    a1 -- "Node to Node" ---> a2;
+    b1 -- "Node to Graph" --> Three;
+    One -- "Graph to Node" ---> c2;
+    One -- "Graph to Graph" ---> Two;
 ```
 
 ### Orientation of subgraph
@@ -318,44 +311,44 @@ flowchart TD
     subgraph Orientation
 
         subgraph A
-        direction BT
-        a1--"Bottom to Top"--->a2
+        direction BT;
+        a1--"Bottom to Top"--->a2;
         end
 
         direction RL
-        A -- "Right to Left" ---> B
-        direction LR
-        B -- "Left to Right" ---> A
+        A -- "Right to Left" ---> B;
+        direction LR;
+        B -- "Left to Right" ---> A;
 
         subgraph B
-        direction TB
-        b1-- "Top to Bottom" --->b2
+        direction TB;
+        b1-- "Top to Bottom" --->b2;
         end
-
     end
 ```
+**Definition**
 
 ```
 flowchart TD
     subgraph Orientation
 
         subgraph A
-        direction BT
-        a1--"Bottom to Top"--->a2
+        direction BT;
+        a1--"Bottom to Top"--->a2;
         end
 
         direction RL
-        A -- "Right to Left" ---> B
-        direction LR
-        B -- "Left to Right" ---> A
+        A -- "Right to Left" ---> B;
+        direction LR;
+        B -- "Left to Right" ---> A;
 
         subgraph B
-        direction TB
-        b1-- "Top to Bottom" --->b2
+        direction TB;
+        b1-- "Top to Bottom" --->b2;
         end
-
     end
 ```
+
 ## Markdown Strings inside Mermaid
 
 Markdown string can be wrapped within the labels using ``"`string`"`` (string inside double quotes and double backticks)
@@ -363,21 +356,21 @@ Markdown string can be wrapped within the labels using ``"`string`"`` (string in
 ```mermaid
 flowchart TD
     subgraph Strings
-        A("`The **cat** in the _hat_`")
-        B{{"`The **dog** in the *_hog_*`"}}
+        A("`The **cat** in the _hat_`");
+        B{{"`The **dog** in the *_hog_*`"}};
     end
-        A --"`Bold **Text**`"---> B
+        A --"`Bold **Text**`"---> B;
 ```
+**Definition**
+
 ```
 flowchart TD
     subgraph Strings
-        A("`The **cat** in the _hat_`")
-        B{{"`The **dog** in the *_hog_*`"}}
+        A("`The **cat** in the _hat_`");
+        B{{"`The **dog** in the *_hog_*`"}};
     end
-        A --"`Bold **Text**`"---> B
+        A --"`Bold **Text**`"---> B;
 ```
-
-
 
 ## Comments
 
@@ -386,20 +379,21 @@ Comments are prefaced with `%%` (Double percent sign)
 ```mermaid
 flowchart LR
 %% This is a comment
-    A --> B --> C
+    A --> B --> C;
 ```
+**Definition**
 
-```code
+```
 flowchart LR
 %% This is a comment
-    A --> B --> C
+    A --> B --> C;
 ```
 
 ## Styling
 
 ### Styling links
 
-using `linkStyle` command.
+Using `linkStyle` command.
 
 ```mermaid
 flowchart LR
@@ -407,21 +401,21 @@ flowchart LR
     subgraph x
     direction LR
         subgraph One
-            direction BT
-        a1
-        a2
+        direction BT;
+        a1;
+        a2;
         end
 
         subgraph Two
-        b1
-        b2
+        b1;
+        b2;
         end
     end
 
-    a1 --"0"--> a2 
-    One --"1"--> Two
-    b1 --"2"--> b2
-    Two --"3"--> One
+    a1 --"0"--> a2; 
+    One --"1"--> Two;
+    b1 --"2"--> b2;
+    Two --"3"--> One;
 
 %% Individual link styling
     linkStyle 0 stroke:red, stroke-width:1px;
@@ -431,25 +425,59 @@ flowchart LR
 
 %% Group styling
     linkStyle 0,1,2,3 stroke:purple, stroke-width:4px;
+```
+**Definition**
 
+```
+flowchart LR
+
+    subgraph x
+    direction LR
+        subgraph One
+        direction BT;
+        a1;
+        a2;
+        end
+
+        subgraph Two
+        b1;
+        b2;
+        end
+    end
+
+    a1 --"0"--> a2; 
+    One --"1"--> Two;
+    b1 --"2"--> b2;
+    Two --"3"--> One;
+
+%% Individual link styling
+    linkStyle 0 stroke:red, stroke-width:1px;
+    linkStyle 1 stroke:yellow, stroke-width:2px;
+    linkStyle 2 stroke:green, stroke-width:3px;
+    linkStyle 3 stroke:purple, stroke-width:4px;
+
+%% Group styling
+    linkStyle 0,1,2,3 stroke:purple, stroke-width:4px;
 ```
 
 ### Styling Nodes
 
-use `style` command
+Use `style` command
 
 ```mermaid
 flowchart LR
-    id1(Start) --> id2(Stop)
+    id1(Start) --> id2(Stop);
 
 %% Node styling
     style id1 fill:red, stroke:blue, stroke-width:4px;
     
     style id2 fill:yellow, stroke:red, stroke-width:4px, stroke-dasharray: 4 4;
 ```
+**Definition**
+
 ```
 flowchart LR
-    id1(Start) --> id2(Stop)
+    id1(Start) --> id2(Stop);
 
 %% Node styling
     style id1 fill:red, stroke:blue, stroke-width:4px;
@@ -463,29 +491,29 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A 
-    B 
-    C
+    A;
+    B;
+    C;
 
-    A --> B & C
+    A --> B & C;
 
 %% Individual styling
-    style A stroke:Red
-    style B stroke:green
+    style A stroke:Red;
+    style B stroke:green;
 ```
+**Definition**
 
 ```
 flowchart LR
-    A 
-    B 
-    C
+    A;
+    B;
+    C;
 
-    A --> B & C
+    A --> B & C;
 
 %% Individual styling
-    style A stroke:Red
-    style B stroke:green
-    style C stroke:Blue
+    style A stroke:Red;
+    style B stroke:green;
 ```
 
 * Group styling
@@ -493,31 +521,36 @@ flowchart LR
 ```mermaid
 flowchart LR
 
-    A 
-    B 
-    C
+    A;
+    B; 
+    C;
 
-    A --> B & C
+    A --> B & C;
 
 %% Group styling
-    class A Group
-    B:::Group
-    C:::Group
+    class A Group;
+    B:::Group;
+    C:::Group;
 
     classDef Group fill:red, stroke:blue, stroke-width:4px;
-
 ```
+**Definition**
+
 ```
 flowchart LR
-%% Group styling
-    A --> B --> C
 
-    class A Group
-    B:::Group
-    C:::Group
+    A;
+    B; 
+    C;
+
+    A --> B & C;
+
+%% Group styling
+    class A Group;
+    B:::Group;
+    C:::Group;
 
     classDef Group fill:red, stroke:blue, stroke-width:4px;
-
 ```
 
 ## Styling with classes in detail
@@ -548,55 +581,65 @@ Define a class of styles and attach this class to the nodes that should have dif
 flowchart LR
 
 %% declaring nodes
-        a
-        b
-        c
+        a;
+        b;
+        c;
 
 %% class definitions
-    classDef Node1 stroke:red
+    classDef Node1 stroke:red;
 
-    classDef Node2 stroke:green
+    classDef Node2 stroke:green;
 
-    classDef Node3 stroke:blue
+    classDef Node3 stroke:blue;
 
 %% Attaching of classes to nodes
-    a:::Node1
-    b:::Node2
-    c:::Node3
+    a:::Node1;
+    b:::Node2;
+    c:::Node3;
 
 %% Linking nodes
-    a-->b & c
+    a-->b & c;
 ```
+**Definition**
 
-```
+```mermaid
 flowchart LR
 
 %% declaring nodes
-        a
-        b
-        c
+        a;
+        b;
+        c;
 
 %% class definitions
-    classDef Node1 stroke:red
+    classDef Node1 stroke:red;
 
-    classDef Node2 stroke:green
+    classDef Node2 stroke:green;
 
-    classDef Node3 stroke:blue
+    classDef Node3 stroke:blue;
 
 %% Attaching of classes to nodes
-    a:::Node1
-    b:::Node2
-    c:::Node3
+    a:::Node1;
+    b:::Node2;
+    c:::Node3;
 
 %% Linking nodes
-    a-->b & c
+    a-->b & c;
 ```
 
 ### Styling all nodes
 
 ```mermaid
 flowchart LR
-    A --> B --> C
+    A --> B --> C;
 
     classDef default fill:green;
 ```
+**Definiton**
+
+```
+flowchart LR
+    A --> B --> C;
+
+    classDef default fill:green;
+```
+

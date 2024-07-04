@@ -602,7 +602,7 @@ flowchart LR
 ```
 **Definition**
 
-```mermaid
+```
 flowchart LR
 
 %% declaring nodes
@@ -634,7 +634,7 @@ flowchart LR
 
     classDef default fill:green;
 ```
-**Definiton**
+**Definition**
 
 ```
 flowchart LR

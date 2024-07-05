@@ -33,7 +33,8 @@ flowchart LR;
 10{"Rhombus"} --> 11{{"Hexagon"}} --> 12>"indented"] --> 13[("Database")];
 ```
 
-**[Flowchart Symbols Table](./flowchart_symbol.md)**
+<!-- **[Flowchart Symbols Table](./flowchart_symbol.md)** -->
+
 
 
 ## Links Between nodes

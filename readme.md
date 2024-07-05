@@ -10,44 +10,42 @@ Inspired from [Jake Steam](https://github.com/JakeSteam/Mermaid)
 <td>Diagram</td>
 <td>Definition</td>
 </tr>
-</table>
 
-
-
+<tr><td>
 
 ```mermaid
-flowchart TD
+flowchart LR
 %% is it raining
-    A["Go out"] --> B{"Is it raining?"} --"No"--> C["Go to movies"]
 
-    B--"Yes"--> D["Stay home"]
+    A["Go out"]
+    B{"Is it raining?"}
+    C["Go to movies"]
+    D["Stay home"]
+    
+    A --> B
+    B --"No"--> C
+    B --"Yes"--> D
+```
+</td><td>
 
-   
-    linkStyle 0 stroke:white, stroke-width:2px;
-    linkStyle 1 stroke:red, stroke-width:2px;
-    linkStyle 2 stroke:green, stroke-width:2px;
-
-    style A fill:#718eed, stroke:white, stroke-width:2px;
-    style B fill:#a26de8, stroke:white, stroke-width:2px, stroke-dasharray:5 5;
-    style C fill:#fe2330, stroke:white, stroke-width:2px;
-    style D fill:#62ea5b, stroke:white, stroke-width:2px;
+```
+flowchart LR
+%% is it raining
+    
+    A["Go out"]
+    B{"Is it raining?"}
+    C["Go to movies"]
+    D["Stay home"]
+    
+    A --> B
+    B --"No"--> C
+    B --"Yes"--> D
 ```
 
-```code
-flowchart TD
-%% is it raining
-    A["Go out"] --> B{"Is it raining?"} --"No"--> C["Go to movies"]
+**[Flowchart in Detail](./flowchart.md)**
 
-    B--"Yes"--> D["Stay home"]
+**[Flowchart_Symbol Table](./flowchart_symbol.md)**
 
-   
-    linkStyle 0 stroke:white, stroke-width:2px;
-    linkStyle 1 stroke:red, stroke-width:2px;
-    linkStyle 2 stroke:green, stroke-width:2px;
+</td></tr>
 
-    style A fill:#718eed, stroke:white, stroke-width:2px;
-    style B fill:#a26de8, stroke:white, stroke-width:2px, stroke-dasharray:5 5;
-    style C fill:#fe2330, stroke:white, stroke-width:2px;
-    style D fill:#62ea5b, stroke:white, stroke-width:2px;
-```
-
+</table>

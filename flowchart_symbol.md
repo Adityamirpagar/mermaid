@@ -1,6 +1,8 @@
 
 # Flowchart symbols
 
+**[FLowchart in detail](./flowchart.md)**
+
 ## Nodes Shape Sheets
 
 <table>

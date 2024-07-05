@@ -169,6 +169,9 @@ flowchart LR
 | Dotted            | -.- | -..- | -...- |
 | Dotted with arrow | -.->| -..->| -...->|
 
+
+[Table for Links](./flowchart_symbol.md/#link-sheets)
+
 ## Graphs
 
 ### Orientation of Flowchart and graphs

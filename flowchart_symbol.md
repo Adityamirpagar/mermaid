@@ -1,6 +1,7 @@
 
 # Flowchart symbols
 
+## Nodes Shape Sheets
 
 <table>
 
@@ -291,4 +292,219 @@ flowchart
 ```
 </td>
 </tr>
+</table>
+
+
+## Link sheets
+
+<table>
+
+
+<tr><td>
+
+**Links Length**
+</td><td>
+
+**1**
+</td><td>
+
+**2**
+</td><td>
+
+**3**
+</td><td>
+
+**Diagram**
+</td><td>
+
+**Definition**
+</td></tr>
+
+
+<tr><td> 
+
+**Invisible** 
+<td>
+
+` ~~~ `
+</td><td>
+
+` ~~~~ `
+</td><td>
+
+` ~~~~~ `
+</td><td>
+
+```mermaid
+flowchart LR
+    A ~~~ B
+```
+</td><td>
+
+```
+flowchart LR
+    A ~~~ B
+```
+</td></tr>
+
+
+<tr><td> 
+
+**Normal** 
+<td>
+
+` --- `
+</td><td>
+
+` ---- `
+</td><td>
+
+` ---- `
+</td><td>
+
+```mermaid
+flowchart LR
+    A --- B
+```
+</td><td>
+
+```
+flowchart LR
+    A --- B
+```
+</td></tr>
+
+
+<tr><td> 
+
+**Normal with Arrow** 
+<td>
+
+` --> `
+</td><td>
+
+` ---> `
+</td><td>
+
+` ----> `
+</td><td>
+
+```mermaid
+flowchart LR
+    A --> B
+```
+</td><td>
+
+```
+flowchart LR
+    A --> B
+```
+</td></tr>
+
+
+<tr><td> 
+
+**Thick** 
+<td>
+
+` === `
+</td><td>
+
+` ==== `
+</td><td>
+
+` ===== `
+</td><td>
+
+```mermaid
+flowchart LR
+    A === B
+```
+</td><td>
+
+```
+flowchart LR
+    A === B
+```
+</td></tr>
+
+
+<tr><td> 
+
+**Thick with arrow** 
+<td>
+
+` ==> `
+</td><td>
+
+` ===> `
+</td><td>
+
+` ====> `
+</td><td>
+
+```mermaid
+flowchart LR
+    A ==> B
+```
+</td><td>
+
+```
+flowchart LR
+    A ==> B
+```
+</td></tr>
+
+<tr><td> 
+
+**Dotted** 
+<td>
+
+` -.- `
+</td><td>
+
+` -..- `
+</td><td>
+
+` -...- `
+</td><td>
+
+```mermaid
+flowchart LR
+    A -.- B
+```
+</td><td>
+
+```
+flowchart LR
+    A -.- B
+```
+</td></tr>
+
+<tr><td> 
+
+**Dotted with Arrow** 
+<td>
+
+` -.-> `
+</td><td>
+
+` -..-> `
+</td><td>
+
+` -...-> `
+</td><td>
+
+```mermaid
+flowchart LR
+    A -.-> B
+```
+</td><td>
+
+```
+flowchart LR
+    A -.-> B
+```
+</td></tr>
+
 </table>

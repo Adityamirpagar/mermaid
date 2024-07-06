@@ -42,10 +42,37 @@ flowchart LR
     B --"Yes"--> D
 ```
 
-**[Flowchart in Detail](./flowchart.md)**
+**[Flowchart in Detail](./flowchart/flowchart.md)**
 
-**[Flowchart_Symbol Table](./flowchart_symbol.md)**
+**[Flowchart_Symbol Table](./flowchart/flowchart_symbol.md)**
 
 </td></tr>
+
+<tr><td>
+
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant John
+
+    Alice ->>+ John: Hi John
+    John -->>-Alice: Hey Alice.
+    John -) Alice: See you later
+```
+</td><td>
+
+```
+sequenceDiagram
+    participant Alice
+    participant John
+
+    Alice ->>+ John: Hi John
+    John -->>-Alice: Hey Alice.
+    John -) Alice: See you later
+```
+**[Sequence Diagrams in detail](./sequence/sequence.md)**
+
+</td></tr>
+
 
 </table>
